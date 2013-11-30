@@ -19,14 +19,14 @@ ProbablyEngine.rotation.register_custom(259, "Assassination[Shadow]", {
     "player.combopoints >= 2"
   }},
   { "Envenom", {
-    "player.buff(Slice and Dice).duration <= 2",
+    "player.buff(Slice and Dice).duration <= 3",
     "player.combopoints > 0"
   }},
   { "Rupture", {
-    "target.debuff(Rupture).duration <= 5",
+    "target.debuff(Rupture).duration <= 8",
     "player.combopoints = 5"
   }},
-  { "Envenom", "player.combopoints >= 4" },
+  { "Envenom", "player.combopoints = 5" },
   { "Dispatch", "player.buff(Blindside)" },
   { "Fan of Knives", "modifier.multitarget" },
   { "Mutilate", "target.health > 35" },
