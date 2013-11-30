@@ -14,6 +14,8 @@ ProbablyEngine.rotation.register_custom(259, "Assassination[Shadow]", {
   { "Vendetta", "modifier.cooldowns" },
 
   -- Rotation
+  { "Mutilate", "player.buff(vanish)" },
+  { "Mutilate", "player.buff(stealth)" },
   { "Slice and Dice", {
     "!player.buff(Slice and Dice)",
     "player.combopoints >= 2"
@@ -32,4 +34,6 @@ ProbablyEngine.rotation.register_custom(259, "Assassination[Shadow]", {
   { "Mutilate", "target.health > 35" },
   { "Dispatch", "target.health < 35" },
 
+}, {
+	{ "Deadly Poison", "!player.buff(Deadly Poison)" },
 })
